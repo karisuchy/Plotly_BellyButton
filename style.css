@@ -1,0 +1,28 @@
+/* # is an ide selector, used to target a sinelbe specifi element with a unique :indeterminate */
+/* . is a class selector used to target multiple elements with a particular classs */
+
+.jumbotron {
+  background-image: url("../bacteria_image.jpg");
+  background-size: 100% 100%;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  opacity: 0.9;
+}
+
+#title {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.panelcolor {
+  background-color: #e1bdfb;
+}
+
+.gaugebackground {
+  background-color: white;
+}
+
+.divborder {
+  border: 2px solid #ff7d4d;
+}

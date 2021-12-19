@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center .strokeme">
+        <!-- Changed the font color and added shadow in the line below -->
+        <h1 id="title">Belly Button Biodiversity Dashboard</h1>
+        <!-- Changed the font size and color and added shadow in the line below -->
+        <p id="title"><font size="5">Use the interactive charts below to explore the dataset</font></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <!-- changed background color and added divisoin border to selection area in line below -->
+        <div class="well panelcolor divborder">
+          <!-- Changed verbiage below -->
+          <h5> Select Test <br> Subject ID <br> Number <br> From Dropdown:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <!-- added border to panel in line below -->
+        <div class="panel panel-sucess divborder">
+          <!-- adding 'panelcolor' here to refernce customer color created in css  https://www.w3schools.com/bootstrap/bootstrap_panels.asp -->
+          <div class="panel-heading panelcolor">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <!-- Top 10 starts on next line -->
+      <div class="col-md-5">   
+        <div id="bar"></div>
+      </div>
+      <!-- gauge chart starts on next line -->
+      <div class="col-md-5">
+        <!-- Trying to eliminate grey background color for gauge in line below -->
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <!-- bubblechart starts next line -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
