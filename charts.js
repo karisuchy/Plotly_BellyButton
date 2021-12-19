@@ -80,7 +80,6 @@ function buildCharts(sample) {
     console.log(yticks);
 
     // 8. Create the trace for the bar chart.
-    // var barData = []; - delete this line???
     var trace = {
       type: "bar",
       orientation: "h",
@@ -89,25 +88,10 @@ function buildCharts(sample) {
       text: otuLabel,
       marker: {
         color: "#ff7d4d",
-        // colorscale: [
-        //   [0, "ff4500"],
-        //   [40, "#ff581a"],
-        //   [60, "#ff6a34"],
-        //   [80, "#ff7d4d"],
-        //   [0.4, "ff9067"],
-        //   [0.5, "ffa280"],
-        //   [0.6, "#ecd5fd"],
-        //   [0.7, "#e1bdfb"],
-        //   [0.8, "#d6a5fa"],
-        //   [0.9, "#cb8df9"],
-        //   [150, "#c075f7"],
-        // ],
-        // color[y<100]: "ff4500",
-        // color[y>=100]: "#c075f7"
       },
     };
 
-    var barData = [trace]; //   ?? Can/should I change 'trace' on line 80 to 'barData' and then eliminate this line??
+    var barData = [trace]; //
 
     // 9. Create the layout for the bar chart.
     var barLayout = {
@@ -198,7 +182,7 @@ function buildCharts(sample) {
       },
     ];
 
-    // 5. Create the layout for the gauge chart.       //  change colors and fonts AFTER you get it to work!!
+    // 5. Create the layout for the gauge chart.
     var gaugeLayout = {
       plot_bgcolor: "#e4e6e7",
       paper_bgcolor: "#e4e6e7",
